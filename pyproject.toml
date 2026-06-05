@@ -1,0 +1,14 @@
+[project]
+name = "baisline"
+version = "0.1.0"
+description = "Bencmarking suite for machine learning models"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers",
+    "tqdm",
+    "tabulate>=0.10.0",
+    "matplotlib>=3.10.9",
+    "torchvision>=0.27.0",
+]

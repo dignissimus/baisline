@@ -1,0 +1,3 @@
+class BudgetExceededException(Exception):
+    """Exception raised when the compute budget is exceeded."""
+    ...
