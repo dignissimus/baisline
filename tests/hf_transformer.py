@@ -70,4 +70,4 @@ if __name__ == "__main__":
     print("Starting HF Transformer training...")
     results = trainer.fit()
     print("Training finished.")
-    results.export_report("testcases/out/hf_gpt2_report.json")
+    results.export_report("tests/out/hf_gpt2_report.json")

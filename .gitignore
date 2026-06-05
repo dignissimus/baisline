@@ -10,4 +10,4 @@ wheels/
 .venv
 
 # Testcase outputs
-testcases/out/
+tests/out/

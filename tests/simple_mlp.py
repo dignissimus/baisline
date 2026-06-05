@@ -35,4 +35,4 @@ if __name__ == "__main__":
     results = trainer.fit()
     print(f"Total FLOPs spent: {results.total_flops}")
     print(f"Peak memory usage: {results.peak_memory_mb} MB")
-    results.export_report("testcases/out/simple_mlp_report.json")
+    results.export_report("tests/out/simple_mlp_report.json")

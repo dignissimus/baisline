@@ -86,41 +86,41 @@ if __name__ == "__main__":
     plot_flops_vs_metric(
         [report_small, report_large], 
         metric_name="loss", 
-        save_path="testcases/out/flops_vs_loss_mnist_log.png", 
+        save_path="tests/out/flops_vs_loss_mnist_log.png", 
         use_log_scale=True
     )
     plot_flops_vs_metric(
         [report_small, report_large], 
         metric_name="loss", 
-        save_path="testcases/out/flops_vs_loss_mnist_linear.png", 
+        save_path="tests/out/flops_vs_loss_mnist_linear.png", 
         use_log_scale=False
     )
     
     plot_flops_vs_metric(
         [report_small, report_large], 
         metric_name="accuracy", 
-        save_path="testcases/out/flops_vs_accuracy_mnist_log.png", 
+        save_path="tests/out/flops_vs_accuracy_mnist_log.png", 
         use_log_scale=True
     )
     plot_flops_vs_metric(
         [report_small, report_large], 
         metric_name="accuracy", 
-        save_path="testcases/out/flops_vs_accuracy_mnist_linear.png", 
+        save_path="tests/out/flops_vs_accuracy_mnist_linear.png", 
         use_log_scale=False
     )
 
     plot_steps_vs_metric(
         [report_small, report_large],
         metric_name="loss",
-        save_path="testcases/out/steps_vs_loss_mnist.png"
+        save_path="tests/out/steps_vs_loss_mnist.png"
     )
     plot_steps_vs_metric(
         [report_small, report_large],
         metric_name="accuracy",
-        save_path="testcases/out/steps_vs_accuracy_mnist.png"
+        save_path="tests/out/steps_vs_accuracy_mnist.png"
     )
 
-    print("\nComparison completed. Charts generated in 'testcases/out/':")
+    print("\nComparison completed. Charts generated in 'tests/out/':")
     print(" - FLOPs vs Loss: flops_vs_loss_mnist_log.png, flops_vs_loss_mnist_linear.png")
     print(" - FLOPs vs Accuracy: flops_vs_accuracy_mnist_log.png, flops_vs_accuracy_mnist_linear.png")
     print(" - Steps vs Loss/Accuracy: steps_vs_loss_mnist.png, steps_vs_accuracy_mnist.png")
