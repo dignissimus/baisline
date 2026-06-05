@@ -4,8 +4,7 @@ from torch.utils.flop_counter import FlopCounterMode
 import time
 
 class PytorchFlopProfiler:
-    def __init__(self, model: nn.Module):
-        self.model = model
+    def __init__(self):
         self.total_flops: float = 0.0
         self._fcm = FlopCounterMode()
 

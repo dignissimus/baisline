@@ -68,7 +68,7 @@ def train_model(model_class, name, budget_gflops):
         optimizer=optimizer,
         budget=budget,
         model_trainer=SupervisedModelTrainer(loss_fn=F.cross_entropy),
-        flop_profiler=PytorchFlopProfiler(model),
+        flop_profiler=PytorchFlopProfiler(),
         model_name=name
     )
     

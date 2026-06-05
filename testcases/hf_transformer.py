@@ -62,6 +62,7 @@ trainer = BudgetTrainer(
     optimizer=optimizer,
     budget=budget,
     model_trainer=HuggingFaceModelTrainer(),
+    flop_profiler=PytorchFlopProfiler(),
     model_name="GPT-2"
 )
 

@@ -13,7 +13,7 @@ train_loader = DataLoader(dataset, batch_size=10)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 
 budget = ComputeBudget(flop_budget=FlopBudget(max_flops=1e7))
-profiler = Profiler(flop_profiler=PytorchFlopProfiler(model))
+profiler = Profiler(flop_profiler=PytorchFlopProfiler())
 
 def run_with_manual_check():
     print("Running with explicit budget check...")

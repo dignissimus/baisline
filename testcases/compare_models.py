@@ -58,7 +58,7 @@ for name, model in models.items():
         optimizer=optimizer,
         budget=budget,
         model_trainer=SupervisedModelTrainer(loss_fn=nn.functional.cross_entropy),
-        flop_profiler=PytorchFlopProfiler(model),
+        flop_profiler=PytorchFlopProfiler(),
         model_name=name
     )
     

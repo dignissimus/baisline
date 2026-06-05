@@ -15,7 +15,7 @@ y_data = torch.randint(0, 2, (100,))
 dataset = list(zip(x_data, y_data))
 
 budget = ComputeBudget(flop_budget=FlopBudget(max_flops=1e7))
-flop_prof = PytorchFlopProfiler(model)
+flop_prof = PytorchFlopProfiler()
 profiler = Profiler(flop_profiler=flop_prof)
 
 epochs = 2

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
-from baisline import BudgetTrainer, ComputeBudget, FlopBudget, UnsupervisedModelTrainer
+from baisline import BudgetTrainer, ComputeBudget, FlopBudget, UnsupervisedModelTrainer, PytorchFlopProfiler
 
 class MyModel(nn.Module):
     def __init__(self):
@@ -27,7 +27,8 @@ trainer = BudgetTrainer(
     train_dataloader=train_loader,
     optimizer=optimizer,
     budget=budget,
-    model_trainer=strategy
+    model_trainer=strategy,
+    flop_profiler=PytorchFlopProfiler()
 )
 
 if __name__ == "__main__":
